@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be057f0f-9a4a-4f77-b121-07517e477236" name="Default Changelist" comment="" />
+    <list default="true" id="be057f0f-9a4a-4f77-b121-07517e477236" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/snapterest/source/components/Application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/components/Stream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/components/StreamTweet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/build/snapterest.js" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/build/snapterest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/source/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/source/app.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,14 +21,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/snapkite-engine" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WJxEqL8GOphV5nQIrFJC6ujoGQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,11 +41,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/snapkite-engine/filters/snapkite-filter-is-retweet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/snapterest/source" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/snapterest/source" />
       <recent name="$PROJECT_DIR$/snapkite-engine/filters/snapkite-filter-is-retweet" />
       <recent name="$PROJECT_DIR$/snapkite-engine/filters/snapkite-filter-is-possibly-sensitive" />
       <recent name="$PROJECT_DIR$/snapkite-engine/filters/snapkite-filter-has-text" />
@@ -62,11 +76,17 @@
       <option name="presentableId" value="Default" />
       <updated>1578881390206</updated>
       <workItem from="1578881393035" duration="584000" />
-      <workItem from="1579086999831" duration="4288000" />
+      <workItem from="1579086999831" duration="18075000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="304" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579148441261">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="304" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1579148441261" />
   </component>
 </project>

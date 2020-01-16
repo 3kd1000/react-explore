@@ -1,18 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
+import Application from './components/Application';
 
-class ReactClass extends Component {
-    render () {
-        return (
-            <h1 className="header"> React Component</h1>
-        );
-    }
-}
-
-const reactComponent = ReactDOM.render(
-    <ReactClass/>,
+ReactDOM.render(
+    <Application />,
     document.getElementById('react-application')
-);
 
-export default ReactClass;
+);
 

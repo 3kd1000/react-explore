@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be057f0f-9a4a-4f77-b121-07517e477236" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/snapterest/source/components/Application.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snapterest/source/components/Stream.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snapterest/source/components/StreamTweet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/components/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/components/Collection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/components/CollectionControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/components/CollectionRenameForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/components/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/components/Tweet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/components/TweetList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapterest/build/snapterest.js" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/build/snapterest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapterest/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/node_modules/prop-types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/node_modules/prop-types/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snapterest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapterest/source/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/source/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/source/components/StreamTweet.js" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/source/components/StreamTweet.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1578881390206</updated>
       <workItem from="1578881393035" duration="584000" />
-      <workItem from="1579086999831" duration="18075000" />
+      <workItem from="1579086999831" duration="37010000" />
     </task>
     <servers />
   </component>

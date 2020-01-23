@@ -32,16 +32,44 @@ class StreamTweet extends Component {
     componentWillReceiveProps(nextProps) {
         console.log('[Snapterest] StreamTweet: 4. Running componentWillReceiveProps()');
         const {tweet: currentTweet} = this.props;
-
         const {tweet: nextTweet} = nextProps;
-
         const currentTweetLength = currentTweet.text.length;
         const nextTweetLength = nextTweet.text.length;
         const isNumberOfCharactersIncreasing = (nextTweetLength > currentTweetLength);
         let headerText;
 
+        this.setState({
+            isNumberOfCharactersIncreasing: isNumberOfCharactersIncreasing
+        });
 
+        if (isNumberOfCharactersIncreasing) {
+            headerText = 'Number of character is increasing';
+        } else {
+            headerText = 'Latest public photo from Twitter';
+        }
 
+        this.setState({headerText});
+
+        window.snapterest.numberOfReceivedTweets++;
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log('[Snapterest] StreamTweet: 5. Running' +
+            'shouldComponentUpdate()');
+
+        return (nextProps.text.length > 1);
+    }
+
+    componentWillUpdate(nextProps, nextState) {
+        console.log('[Snapterest] StreamTweet: 6. Running' +
+            'componentWillUpdate()');
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log('[Snapterest] StreamTweet: 7. Running' +
+            'componentDidUpdate()');
+
+        window.snapterest.numberOfDisplayedTweets++;
     }
 
 

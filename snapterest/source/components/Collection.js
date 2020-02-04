@@ -3,14 +3,33 @@ import ReactDOMServer from 'react-dom/server';
 import CollectionControls from './CollectionControls';
 import TweetList from './TweetList';
 import Header from './Header';
-import Tweet from "./Tweet";
+import CollectionUtils from '../utils/CollectionUtils';
+import CollectionStore from "../stores/CollectionStore";
+
+ß
 
 class Collection extends Component {
-    createHtmlMarkupStringOfTweetList = () => {
-        const {tweets} = this.props;
+    state = {
+        collectionTweets: CollectionStore.getCollectionTweets()
+    };
 
+    componentDidMount() {
+        CollectionStore.addChangeListener(this.onCollectionChange);
+    }
+
+    componentWillUnmount() {
+        CollectionStore.removeChangeLister(this.onCollectionChange);
+    }
+
+    onCollectionChange = () => {
+        this.setState({
+            collectionTweets: CollectionStore.getCollectionTweets()
+        });
+    };
+
+    createHtmlMarkupStringOfTweetList = () => {
         const htmlString = ReactDOMServer.renderToStaticMarkup(
-            <TweetList tweets={tweets} />
+            <TweetList tweets={this.state.collectionTweets} />
         );
 
         const htmlMarkup = {
@@ -20,40 +39,28 @@ class Collection extends Component {
         return JSON.stringify(htmlMarkup);
     };
 
-    getListOfTweetIds = () => Object.keys(this.props.tweets);
-
-    getNumberOfTweetsInCollection = () => this.getListOfTweetIds().length;
-
     render() {
-        const numberOfTweetsInCollection = this.getNumberOfTweetsInCollection();
+        const {collectionTweets} = this.state;
+        const numberOfTweetsInCollection = CollectionUtils.getNumberOfTweetsInCollection(collectionTweets);
+        let htmlMarkup;
 
         if (numberOfTweetsInCollection > 0) {
-            const {
-                tweets,
-                onRemoveAllTweetsFromCollection,
-                onRemoveTweetFromCollection
-            } = this.props;
-
-            const htmlMarkup = this.createHtmlMarkupStringOfTweetList();
+            htmlMarkup = this.createHtmlMarkupStringOfTweetList();
 
             return (
                 <div>
                     <CollectionControls
-                        numberOftweetsInCollection = {numberOfTweetsInCollection}
+                        numberOfTweetsInCollection = {numberOfTweetsInCollection}
                         htmlMarkup = {htmlMarkup}
-                        onRemoveAllTweetsFromCollection = {onRemoveAllTweetsFromCollection}
                     />
 
                     <TweetList
-                        tweets={tweets}
-                        onRemoveTweetFromCollection = {onRemoveTweetFromCollection}
+                        tweets={collectionTweets}
                     />
                 </div>
             );
         }
-
         return <Header text = "Your Collection is Empty" />;
-
     }
 }
 

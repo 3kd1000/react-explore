@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
 const tweetStyle = {
@@ -16,7 +16,7 @@ const imageStyle = {
     border: '1px solid #fff'
 };
 
-class Tweet extends React.Component {
+class Tweet extends Component {
     handleImageClick() {
         const {tweet, onImageClick} = this.props;
 

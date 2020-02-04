@@ -2,17 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be057f0f-9a4a-4f77-b121-07517e477236" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/snapterest/source/components/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snapterest/source/components/Collection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snapterest/source/components/CollectionControls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snapterest/source/components/CollectionRenameForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snapterest/source/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snapterest/source/components/Tweet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snapterest/source/components/TweetList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/actions/CollectionActionCreators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/actions/TweetActionCreators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/components/CollectionExportForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/dispatcher/AppDispatcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/stores/CollectionStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/stores/TweetStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/utils/CollectionUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/utils/TweetUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/utils/TweetUtils.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapterest/source/utils/WebAPIUtils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapterest/node_modules/prop-types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/node_modules/prop-types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/build/snapterest.js" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/build/snapterest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snapterest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/source/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/source/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/source/components/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/source/components/Application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/source/components/Collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/source/components/Collection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/source/components/CollectionControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/source/components/CollectionControls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/source/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/source/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/source/components/Stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/source/components/Stream.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snapterest/source/components/StreamTweet.js" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/source/components/StreamTweet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapterest/source/components/Tweet.js" beforeDir="false" afterPath="$PROJECT_DIR$/snapterest/source/components/Tweet.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +40,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1WJxEqL8GOphV5nQIrFJC6ujoGQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -78,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1578881390206</updated>
       <workItem from="1578881393035" duration="584000" />
-      <workItem from="1579086999831" duration="37010000" />
+      <workItem from="1579086999831" duration="49629000" />
     </task>
     <servers />
   </component>
@@ -86,9 +103,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="304" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579148441261">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="-1573" y="154" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580193991246">
+      <screen x="-1920" y="23" width="1920" height="986" />
     </state>
     <state x="304" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1579148441261" />
+    <state x="-1573" y="154" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027/-1920.23.1920.986@-1920.23.1920.986" timestamp="1580193991246" />
+    <state x="-1420" y="229" width="670" height="676" key="search.everywhere.popup" timestamp="1580189970028">
+      <screen x="-1920" y="23" width="1920" height="986" />
+    </state>
+    <state x="-1420" y="229" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027/-1920.23.1920.986@-1920.23.1920.986" timestamp="1580189970028" />
   </component>
 </project>

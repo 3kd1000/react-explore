@@ -15,7 +15,7 @@ class CollectionControls extends Component {
         const {numberOfTweetsInCollection} = this.props;
         let text = numberOfTweetsInCollection;
 
-        if (numberOfTweetsInCollection===1) {
+        if (numberOfTweetsInCollection === 1) {
             text = '${text} tweet in your';
         } else {
             text = '${text} tweets in your';
@@ -53,7 +53,7 @@ class CollectionControls extends Component {
                 <CollectionRenameForm
                     name={name} //여기서 setCollectionName 에 변수로 name 안넘겨줘도 되는건가?
                     onChangeCollectionName = {this.setCollectionName}
-                    onCancleCollectionNameChange = {this.toggleEditCollectionName}
+                    onCancelCollectionNameChange = {this.toggleEditCollectionName}
                 />
             );
         }

@@ -39,7 +39,7 @@ class StreamTweet extends Component {
         let headerText;
 
         this.setState({
-            isNumberOfCharactersIncreasing: isNumberOfCharactersIncreasing
+            numberOfCharactersIsIncreasing: isNumberOfCharactersIncreasing
         });
 
         if (isNumberOfCharactersIncreasing) {
@@ -57,7 +57,7 @@ class StreamTweet extends Component {
         console.log('[Snapterest] StreamTweet: 5. Running' +
             'shouldComponentUpdate()');
 
-        return (nextProps.text.length > 1);
+        return (nextProps.tweet.text.length > 1);
     }
 
     componentWillUpdate(nextProps, nextState) {

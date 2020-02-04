@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 export const DEFAULT__HEADER_TEXT = 'Default header';
 
@@ -9,7 +9,7 @@ const headerStyle = {
     margin: '20px 10px'
 };
 
-class Header extends React.Component {
+class Header extends Component {
     render () {
         const {text} = this.props;
         return (
